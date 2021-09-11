@@ -15,6 +15,7 @@ const topicsSlice = createSlice({
                 state.topics = {
                     ...state.topics,
                     [action.payload.id]: {
+                        id: action.payload.id,
                         name: action.payload.name,
                         icon: action.payload.icon,
                         quizIds: []
