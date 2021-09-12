@@ -5,7 +5,6 @@ import ROUTES from "../../app/routes";
 
 export default function Quizzes() {
   const quizzes = useSelector(selectQuizzes) // replace this with a call to your selector to get all the quizzes in state
-  console.log(Object.values(quizzes).map(quiz => quiz.id))
   return (
     <section className="center">
       <h1>Quizzes</h1>

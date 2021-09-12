@@ -24,7 +24,6 @@ const quizSlice = createSlice({
 
 export const addQuizzAssignTopic = (payload) => {
     return (dispatch) =>{
-        console.log(payload)
         dispatch(addQuizz({
             id: payload.id,
             name: payload.name,
